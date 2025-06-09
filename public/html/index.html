@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>City Companion</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>City Companion</h1>
+    <input type="text" id="cityInput" placeholder="Enter city name">
+    <button onclick="fetchCityInfo()">Search</button>
+    
+    <div id="weatherInfo"></div>
+    <div id="newsSection"></div>
+  </div>
+
+  <script>
+    async function fetchCityInfo() {
+      const city = document.getElementById('cityInput').value;
+      const res = await fetch(`/api/info/${city}`);
+      const data = await res.json();
+
+      document.getElementById('weatherInfo').innerHTML = `
+        <h2>Weather</h2>
+        <p>${data.weather.location.name}, ${data.weather.current.temp_c}°C</p>
+        <p>${data.weather.current.condition.text}</p>
+        <img src="${data.weather.current.condition.icon}" />
+      `;
+
+      document.getElementById('newsSection').innerHTML = `
+        <h2>News</h2>
+        <ul>
+          ${data.news.map(n => `<li><a href="${n.url}" target="_blank">${n.title}</a></li>`).join('')}
+        </ul>
+      `;
+    }
+  </script>
+</body>
+</html>
