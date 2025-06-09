@@ -3,76 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>City Companion App - README</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f9fafb;
-      margin: 0;
-      padding: 2rem;
-      color: #111827;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-      line-height: 1.6;
-    }
-    h1, h2, h3 {
-      color: #2563eb;
-    }
-    pre {
-      background: #1e293b;
-      color: #f8fafc;
-      padding: 1rem;
-      overflow-x: auto;
-      border-radius: 6px;
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 0.95rem;
-      line-height: 1.4;
-      margin: 1rem 0;
-    }
-    code {
-      font-family: 'Courier New', Courier, monospace;
-      background: #e5e7eb;
-      padding: 2px 6px;
-      border-radius: 4px;
-      color: #111827;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 1rem 0;
-    }
-    th, td {
-      border: 1px solid #d1d5db;
-      padding: 0.5rem 1rem;
-      text-align: left;
-    }
-    th {
-      background-color: #2563eb;
-      color: white;
-    }
-    a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    hr {
-      border: none;
-      border-top: 1px solid #d1d5db;
-      margin: 2rem 0;
-    }
-    .container {
-      background: white;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-    ul, ol {
-      padding-left: 1.2rem;
-    }
-  </style>
 </head>
 <body>
   <div class="container">
@@ -132,9 +62,9 @@ npm install
 </code></pre>
     <p>Open <a href="http://localhost:5000" target="_blank" rel="noopener noreferrer">http://localhost:5000</a> in your browser.</p>
     <hr />
-    <h2>📸 Screenshots</h2>
+    <!--<h2>📸 Screenshots</h2>
     <p><em>Add screenshots here to showcase your app’s UI.</em></p>
-    <hr />
+    <hr /> -->
     <h2>📝 Future Improvements</h2>
     <ul>
       <li>Add user authentication to save favorite cities.</li>
