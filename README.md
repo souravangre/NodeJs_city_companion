@@ -20,16 +20,22 @@
       color: #2563eb;
     }
     pre {
-      background: #e5e7eb;
+      background: #1e293b;
+      color: #f8fafc;
       padding: 1rem;
       overflow-x: auto;
       border-radius: 6px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin: 1rem 0;
     }
     code {
       font-family: 'Courier New', Courier, monospace;
       background: #e5e7eb;
-      padding: 2px 4px;
+      padding: 2px 6px;
       border-radius: 4px;
+      color: #111827;
     }
     table {
       width: 100%;
@@ -63,15 +69,17 @@
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
+    ul, ol {
+      padding-left: 1.2rem;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>City Companion App 🌆☀️📰</h1>
-    <p>A modern full-stack web application that provides real-time weather updates and the latest news for any city you search — all powered by Node.js, Express, MongoDB, and external APIs.</p>
-
-    <hr />
-
+    <p>
+      A modern full-stack web application that provides real-time weather updates and the latest news for any city you search — all powered by Node.js, Express, MongoDB, and external APIs.
+    </p><hr/>
     <h2>🚀 Features</h2>
     <ul>
       <li>🔍 Search for <strong>any city</strong> to get up-to-date weather information and recent news headlines.</li>
@@ -81,9 +89,7 @@
       <li>⚡ Fast and responsive UI built with clean HTML, CSS, and JavaScript.</li>
       <li>🧩 Modular architecture separating routes, services, and models for maintainability.</li>
     </ul>
-
     <hr />
-
     <h2>🛠️ Technologies Used</h2>
     <table>
       <thead>
@@ -103,9 +109,7 @@
         <tr><td>HTML/CSS/JS</td><td>Frontend user interface</td></tr>
       </tbody>
     </table>
-
     <hr />
-
     <h2>💡 How It Works</h2>
     <ol>
       <li>User enters a city name in the search box.</li>
@@ -114,27 +118,23 @@
       <li>Frontend dynamically displays the weather and news in styled cards.</li>
       <li>User can search repeatedly for different cities without refreshing.</li>
     </ol>
-
     <hr />
-
     <h2>🖥️ Setup & Installation</h2>
+    <p>Clone the repo and install dependencies:</p>
     <pre><code>git clone https://github.com/YOUR_USERNAME/city-companion-app.git
 cd city-companion-app
 npm install
 </code></pre>
     <p>Configure your API keys in <code>services/services.js</code> (replace <code>YOUR_WEATHER_API_KEY</code> and <code>YOUR_NEWS_API_KEY</code> with your actual keys).</p>
     <p>Ensure MongoDB is running locally or update connection string in <code>db/connectDB.js</code> for your MongoDB Atlas cluster.</p>
+    <p>Start the app:</p>
     <pre><code>npm start
 </code></pre>
     <p>Open <a href="http://localhost:5000" target="_blank" rel="noopener noreferrer">http://localhost:5000</a> in your browser.</p>
-
     <hr />
-
     <h2>📸 Screenshots</h2>
     <p><em>Add screenshots here to showcase your app’s UI.</em></p>
-
     <hr />
-
     <h2>📝 Future Improvements</h2>
     <ul>
       <li>Add user authentication to save favorite cities.</li>
@@ -142,23 +142,7 @@ npm install
       <li>Add dark mode toggle and theme customizations.</li>
       <li>Support more APIs like air quality and local events.</li>
     </ul>
-
     <hr />
-
-    <h2>📄 License</h2>
-    <p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details.</p>
-
-    <hr />
-
-    <h2>🙌 Contributions</h2>
-    <p>Contributions, issues, and feature requests are welcome! Feel free to check the <a href="https://github.com/YOUR_USERNAME/city-companion-app/issues" target="_blank" rel="noopener noreferrer">issues page</a> or open a pull request.</p>
-
-    <hr />
-
-    <h2>📞 Contact</h2>
-    <p>Created by <strong>Your Name</strong> — <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">LinkedIn</a> | <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-
-    <p style="text-align:center; margin-top: 3rem;">✨ Happy coding and exploring cities! ✨</p>
   </div>
 </body>
 </html>
