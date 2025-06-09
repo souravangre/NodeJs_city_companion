@@ -51,8 +51,8 @@
     <hr />
     <h2>🖥️ Setup & Installation</h2>
     <p>Clone the repo and install dependencies:</p>
-    <pre><code>git clone https://github.com/YOUR_USERNAME/city-companion-app.git
-cd city-companion-app
+    <pre><code>git clone https://github.com/souravangre/NodeJs_city_companion.git
+cd NodeJs_city_companion
 npm install
 </code></pre>
     <p>Configure your API keys in <code>services/services.js</code> (replace <code>YOUR_WEATHER_API_KEY</code> and <code>YOUR_NEWS_API_KEY</code> with your actual keys).</p>
